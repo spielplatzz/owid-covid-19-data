@@ -20,6 +20,7 @@ class Taiwan:
         "高端": "Medigen",
         "Moderna 雙價\rBA.1": "Moderna",
         "Moderna 雙價 BA.1": "Moderna",
+        "Moderna雙價 BA.1": "Moderna",
         "Moderna": "Moderna",
         "Moderna雙價 BA.4/5": "Moderna",
         "BioNTech": "Pfizer/BioNTech",
@@ -63,7 +64,8 @@ class Taiwan:
         df = dfs[0]
         cols = df.columns
 
-        shape_expected = (42, 4)
+        print(df)
+        shape_expected = (44, 4)
         if df.shape != shape_expected:
             raise ValueError(f"Table 1: format has changed! It has shape {df.shape} instead of {shape_expected}")
 
@@ -83,16 +85,12 @@ class Taiwan:
         # print(df)
         # usually rows either starting from row_delimit_1 or row_delimit_2 are the ones needing surgery.
         print(df)
-        row_delimit_1 = 28
-        row_delimit_2 = 34
-        if df.iloc[row_delimit_1][0] == "第二劑":
-            row_delimit = row_delimit_1
-        elif df.iloc[row_delimit_2][0] == "總計":
-            row_delimit = row_delimit_2
-        else:
+        # row_delimit_1 = 28
+        # row_delimit_2 = 34
+        row_delimit = 37
+        if not df.iloc[row_delimit][0] == "第二劑":
             raise ValueError(
-                f"Unexpected value in both key cells {row_delimit_1} ({df.iloc[row_delimit_1][0]}) and"
-                f" {row_delimit_2} ({df.iloc[row_delimit_2][0]})"
+                f"Unexpected value in both key cells {row_delimit} ({df.iloc[row_delimit][0]})!"
             )
         for i in range(row_delimit, len(df)):
             if not isinstance(df.iloc[i][3], str) and math.isnan(df.iloc[i][3]):
@@ -133,17 +131,17 @@ class Taiwan:
         num_dose1 = clean_count(df.loc["總計", "第一劑"]["total"])
         num_dose2 = clean_count(df.loc["總計", "第二劑"]["total"])
         num_booster1 = clean_count(df.loc["總計", "基礎加強劑"]["total"])
-        num_add = clean_count(df.loc["總計", "追加劑"]["total"])
+        num_add_1 = clean_count(df.loc["總計", "追加劑"]["total"])
         num_add_2 = clean_count(df.loc["總計", "第二次追加劑"]["total"])
         num_add_3 = clean_count(df.loc["總計", "第三次追加劑"]["total"])
         num_add_4 = clean_count(df.loc["總計", "第四次追加劑"]["total"])
         num_add_5 = clean_count(df.loc["總計", "第五次追加劑"]["total"])
 
         return {
-            "total_vaccinations": num_dose1 + num_dose2 + num_booster1 + num_add + num_add_2 + num_add_3 + num_add_4 + num_add_5,
+            "total_vaccinations": num_dose1 + num_dose2 + num_booster1 + num_add_1 + num_add_2 + num_add_3 + num_add_4 + num_add_5,
             "people_vaccinated": num_dose1,
             "people_fully_vaccinated": num_dose2,
-            "total_boosters": num_booster1 + num_add + num_add_2 + num_add_3 + num_add_4 + num_add_5,
+            "total_boosters": num_booster1 + num_add_1 + num_add_2 + num_add_3 + num_add_4 + num_add_5,
         }
 
     def _parse_vaccines(self, df: pd.DataFrame) -> str:
