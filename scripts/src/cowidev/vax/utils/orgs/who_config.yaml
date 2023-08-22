@@ -298,6 +298,8 @@ countries:
     owid_name: "Somalia"
   - org_name: South Africa
     owid_name: South Africa
+  - org_name: "South Korea"
+    owid_name: "South Korea"
   - org_name: "South Sudan"
     owid_name: "South Sudan"
   - org_name: "Sri Lanka"
