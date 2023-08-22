@@ -173,6 +173,7 @@ class Malaysia(CountryVaxBase):
             .pipe(self.pipe_metadata)
             .pipe(self.pipe_columns_out)
             .pipe(self.pipe_filter_dp)
+            .pipe(self.pipe_assign_nan_to_people_vaccinated)
         )
 
     def pipe_filter_dp(self, df: pd.DataFrame) -> pd.DataFrame:
@@ -185,6 +186,28 @@ class Malaysia(CountryVaxBase):
             "2023-07-07",
         ]
         return df[-df["date"].isin(dates_ignore)]
+
+    def pipe_assign_nan_to_people_vaccinated(self, df: pd.DataFrame) -> pd.DataFrame:
+        dates = [
+            "2023-04-24",
+            "2023-05-15",
+            "2023-06-10",
+            "2023-06-25",
+            "2023-06-30",
+            "2023-07-03",
+            "2023-07-08",
+            "2023-07-09",
+            "2023-07-10",
+            "2023-07-11",
+            "2023-07-12",
+            "2023-07-13",
+            "2023-07-14",
+            "2023-07-15",
+            "2023-07-16",
+        ]
+        mask = df["date"].isin(dates)
+        df.loc[mask, "people_vaccinated"] = pd.NA
+        return df
 
     def export(self):
         df = self.read().pipe(self.pipeline)
