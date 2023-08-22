@@ -56,6 +56,7 @@ pipeline:
         - Curacao # Moved to PAHO
         - Australia # Moved to WHO
         - Macao # Stop reporting bc website returns 403 error
+        - South Korea  # Moved to WHO
     process:
       skip_complete:
         - Pitcairn
