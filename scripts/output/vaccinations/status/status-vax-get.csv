@@ -47,16 +47,16 @@ cowidev.vax.batch.greece,23.1,True,2023-09-06T07:00:30,,
 cowidev.vax.batch.hong_kong,4.4,True,2023-09-06T14:42:24,,
 cowidev.vax.batch.indonesia,,,2023-09-06T07:00:07,,
 cowidev.vax.batch.ireland,4.55,True,2023-09-06T07:00:12,,
-cowidev.vax.batch.israel,0.11,False,2023-09-06T07:02:18,"Traceback (most recent call last):
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/cmd/commons/get.py"", line 47, in run
+cowidev.vax.batch.israel,0.35,False,2023-09-06T14:43:26,"Traceback (most recent call last):
+  File ""/home/lucas/repos/covid-19-data/scripts/src/cowidev/cmd/commons/get.py"", line 47, in run
     module.main()
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/batch/israel.py"", line 189, in main
+  File ""/home/lucas/repos/covid-19-data/scripts/src/cowidev/vax/batch/israel.py"", line 189, in main
     Israel().export()
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/batch/israel.py"", line 175, in export
+  File ""/home/lucas/repos/covid-19-data/scripts/src/cowidev/vax/batch/israel.py"", line 175, in export
     df = self.read().pipe(self.pipeline)
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/batch/israel.py"", line 21, in read
+  File ""/home/lucas/repos/covid-19-data/scripts/src/cowidev/vax/batch/israel.py"", line 21, in read
     data = request_json(self.source_url, verify=False)
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/utils/web/scraping.py"", line 107, in request_json
+  File ""/home/lucas/repos/covid-19-data/scripts/src/cowidev/utils/web/scraping.py"", line 107, in request_json
     return json.loads(text)
   File ""/usr/lib/python3.10/json/__init__.py"", line 346, in loads
     return _default_decoder.decode(s)
@@ -168,23 +168,7 @@ cowidev.vax.incremental.croatia,0.99,True,2023-09-06T07:00:13,,
 cowidev.vax.incremental.cuba,11.63,True,2023-09-06T07:00:23,,
 cowidev.vax.incremental.curacao,,,2023-09-06T07:00:12,,
 cowidev.vax.incremental.cyprus,2.08,True,2023-09-06T07:00:14,,
-cowidev.vax.incremental.dominican_republic,13.18,False,2023-09-06T07:02:44,"Traceback (most recent call last):
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/cmd/commons/get.py"", line 47, in run
-    module.main()
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/incremental/dominican_republic.py"", line 112, in main
-    DominicanRepublic().export()
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/incremental/dominican_republic.py"", line 68, in export
-    data = self.read().pipe(self.pipeline)
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/incremental/dominican_republic.py"", line 26, in read
-    metrics = self._parse_metrics(driver)
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/incremental/dominican_republic.py"", line 35, in _parse_metrics
-    metric_candidates = _find_potential_metrics(driver)
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/incremental/dominican_republic.py"", line 91, in _find_potential_metrics
-    h3 = _find_h3(driver)
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/incremental/dominican_republic.py"", line 81, in _find_h3
-    raise ValueError(""More than one element found!"")
-ValueError: More than one element found!
-",More than one element found!
+cowidev.vax.incremental.dominican_republic,14.39,True,2023-09-06T14:43:31,,
 cowidev.vax.incremental.el_salvador,8.85,True,2023-09-06T07:00:21,,
 cowidev.vax.incremental.faeroe_islands,1.28,True,2023-09-06T07:00:13,,
 cowidev.vax.incremental.fiji,0.0,True,2023-09-06T07:00:12,,
@@ -214,27 +198,7 @@ cowidev.vax.incremental.myanmar,,,2023-09-06T07:00:21,,
 cowidev.vax.incremental.nepal,,,2023-09-06T07:00:21,,
 cowidev.vax.incremental.north_macedonia,,,2023-09-06T07:00:21,,
 cowidev.vax.incremental.northern_cyprus,8.86,True,2023-09-06T07:00:30,,
-cowidev.vax.incremental.paho,86.04,False,2023-09-06T07:04:10,"Traceback (most recent call last):
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/cmd/commons/get.py"", line 47, in run
-    module.main()
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/incremental/paho.py"", line 195, in main
-    PAHO().export()
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/incremental/paho.py"", line 190, in export
-    df = self.read().pipe(self.pipeline)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/core/generic.py"", line 5430, in pipe
-    return com.pipe(self, func, *args, **kwargs)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/core/common.py"", line 471, in pipe
-    return func(obj, *args, **kwargs)
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/incremental/paho.py"", line 167, in pipeline
-    df.pipe(self.pipe_check_columns)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/core/generic.py"", line 5430, in pipe
-    return com.pipe(self, func, *args, **kwargs)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/core/common.py"", line 471, in pipe
-    return func(obj, *args, **kwargs)
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/incremental/paho.py"", line 122, in pipe_check_columns
-    raise ValueError(f""Missing column fields: {columns_missing}. Present columns are: {df.columns}"")
-ValueError: Missing column fields: {'Country/ Territory', 'Total doses', 'Single dose', 'Second dose', 'Country code', 'First dose', '1st additional dose', '2nd additional dose'}. Present columns are: Index(['date,location,total_vaccinations,people_vaccinated,people_fully_vaccinated,total_boosters,new_vaccinations,new_vaccinations_interpolated,new_people_vaccinated_interpolated,new_vaccinations_smoothed,new_people_vaccinated_smoothed', 'date'], dtype='object')
-","Missing column fields: {'Country/ Territory', 'Total doses', 'Single dose', 'Second dose', 'Country code', 'First dose', '1st additional dose', '2nd additional dose'}. Present columns are: Index(['date,location,total_vaccinations,people_vaccinated,people_fully_vaccinated,total_boosters,new_vaccinations,new_vaccinations_interpolated,new_people_vaccinated_interpolated,new_vaccinations_smoothed,new_people_vaccinated_smoothed', 'date'], dtype='object')"
+cowidev.vax.incremental.paho,77.82,True,2023-09-06T14:44:35,,
 cowidev.vax.incremental.pakistan,,,2023-09-06T07:00:22,,
 cowidev.vax.incremental.philippines,,,2023-09-06T07:00:22,,
 cowidev.vax.incremental.poland,4.42,True,2023-09-06T07:00:26,,
