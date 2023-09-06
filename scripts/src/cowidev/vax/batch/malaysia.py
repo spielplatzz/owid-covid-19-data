@@ -190,9 +190,16 @@ class Malaysia(CountryVaxBase):
     def pipe_assign_nan_to_people_vaccinated(self, df: pd.DataFrame) -> pd.DataFrame:
         dates = [
             "2023-04-24",
+            "2023-04-27",
             "2023-05-15",
             "2023-06-10",
+            "2023-06-24",
             "2023-06-25",
+            "2023-06-26",
+            "2023-06-27",
+            "2023-07-01",
+            "2023-07-02",
+            "2023-07-16",
             "2023-06-30",
             "2023-07-03",
             "2023-07-08",
@@ -203,7 +210,6 @@ class Malaysia(CountryVaxBase):
             "2023-07-13",
             "2023-07-14",
             "2023-07-15",
-            "2023-07-16",
         ]
         mask = df["date"].isin(dates)
         df.loc[mask, "people_vaccinated"] = pd.NA

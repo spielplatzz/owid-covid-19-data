@@ -120,6 +120,12 @@ class Ireland(CountryVaxBase):
                 "2023-08-05",
                 "2023-08-06",
                 "2023-08-07",
+                "2023-08-11",
+                "2023-08-12",
+                "2023-08-19",
+                "2023-08-20",
+                "2023-08-26",
+                "2023-08-29",
             ]
         )
         # for col in ["total_vaccinations", "people_vaccinated", "people_fully_vaccinated", "total_boosters"]:
