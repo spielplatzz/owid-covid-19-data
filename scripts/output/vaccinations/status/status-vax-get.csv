@@ -1,62 +1,10 @@
 module,execution_time (sec),success,timestamp,error,error_short
-cowidev.vax.batch.argentina,57.76,True,2023-09-05T07:01:27,,
-cowidev.vax.batch.australia,,,2023-09-05T07:00:29,,
-cowidev.vax.batch.austria_old,,,2023-09-05T07:00:29,,
-cowidev.vax.batch.belgium,4.32,True,2023-09-05T07:00:33,,
-cowidev.vax.batch.bolivia,0.22,False,2023-09-05T07:05:20,"Traceback (most recent call last):
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/cmd/commons/get.py"", line 47, in run
-    module.main()
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/batch/bolivia.py"", line 83, in main
-    Bolivia().export()
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/batch/bolivia.py"", line 78, in export
-    df = self.read().pipe(self.pipeline)
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/batch/bolivia.py"", line 21, in read
-    df_ = pd.read_csv(url, usecols=column_rename.keys()).rename(columns=column_rename)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/util/_decorators.py"", line 311, in wrapper
-    return func(*args, **kwargs)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/readers.py"", line 586, in read_csv
-    return _read(filepath_or_buffer, kwds)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/readers.py"", line 482, in _read
-    parser = TextFileReader(filepath_or_buffer, **kwds)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/readers.py"", line 811, in __init__
-    self._engine = self._make_engine(self.engine)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/readers.py"", line 1040, in _make_engine
-    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/c_parser_wrapper.py"", line 51, in __init__
-    self._open_handles(src, kwds)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/base_parser.py"", line 222, in _open_handles
-    self.handles = get_handle(
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/common.py"", line 609, in get_handle
-    ioargs = _get_filepath_or_buffer(
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/common.py"", line 312, in _get_filepath_or_buffer
-    with urlopen(req_info) as req:
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/common.py"", line 212, in urlopen
-    return urllib.request.urlopen(*args, **kwargs)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 525, in open
-    response = meth(req, response)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 634, in http_response
-    response = self.parent.error(
-  File ""/usr/lib/python3.10/urllib/request.py"", line 557, in error
-    result = self._call_chain(*args)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 496, in _call_chain
-    result = func(*args)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 749, in http_error_302
-    return self.parent.open(new, timeout=req.timeout)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 525, in open
-    response = meth(req, response)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 634, in http_response
-    response = self.parent.error(
-  File ""/usr/lib/python3.10/urllib/request.py"", line 563, in error
-    return self._call_chain(*args)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 496, in _call_chain
-    result = func(*args)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 503: Backend is unhealthy
-",HTTP Error 503: Backend is unhealthy
-cowidev.vax.batch.canada,5.48,False,2023-09-05T07:05:25,"Traceback (most recent call last):
+cowidev.vax.batch.argentina,18.16,True,2023-09-06T07:00:25,,
+cowidev.vax.batch.australia,,,2023-09-06T07:00:07,,
+cowidev.vax.batch.austria_old,,,2023-09-06T07:00:07,,
+cowidev.vax.batch.belgium,19.93,True,2023-09-06T07:00:27,,
+cowidev.vax.batch.bolivia,4.57,True,2023-09-06T07:00:12,,
+cowidev.vax.batch.canada,6.81,False,2023-09-06T07:02:12,"Traceback (most recent call last):
   File ""/home/owid/covid-19-data/scripts/src/cowidev/cmd/commons/get.py"", line 47, in run
     module.main()
   File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/batch/canada.py"", line 282, in main
@@ -87,58 +35,16 @@ cowidev.vax.batch.canada,5.48,False,2023-09-05T07:05:25,"Traceback (most recent 
     raise Exception(
 Exception: 2 chunks of lengths 36, 29 would be NaNed for metric people_vaccinated. That is more than maximum allowed (22) by make_monotonic() - check the data. Check dates ['2023-01-26', '2023-06-15']. Location(s) affected: {'Canada'}
 ","2 chunks of lengths 36, 29 would be NaNed for metric people_vaccinated. That is more than maximum allowed (22) by make_monotonic() - check the data. Check dates ['2023-01-26', '2023-06-15']. Location(s) affected: {'Canada'}"
-cowidev.vax.batch.chile,0.02,False,2023-09-05T07:05:25,"Traceback (most recent call last):
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/cmd/commons/get.py"", line 47, in run
-    module.main()
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/batch/chile.py"", line 124, in main
-    Chile().export()
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/batch/chile.py"", line 109, in export
-    df_man = self.read(self.source_url_manufacturer).pipe(self.pipeline_manufacturer)
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/batch/chile.py"", line 30, in read
-    df = pd.read_csv(url)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/util/_decorators.py"", line 311, in wrapper
-    return func(*args, **kwargs)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/readers.py"", line 586, in read_csv
-    return _read(filepath_or_buffer, kwds)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/readers.py"", line 482, in _read
-    parser = TextFileReader(filepath_or_buffer, **kwds)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/readers.py"", line 811, in __init__
-    self._engine = self._make_engine(self.engine)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/readers.py"", line 1040, in _make_engine
-    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/c_parser_wrapper.py"", line 51, in __init__
-    self._open_handles(src, kwds)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/base_parser.py"", line 222, in _open_handles
-    self.handles = get_handle(
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/common.py"", line 609, in get_handle
-    ioargs = _get_filepath_or_buffer(
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/common.py"", line 312, in _get_filepath_or_buffer
-    with urlopen(req_info) as req:
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/common.py"", line 212, in urlopen
-    return urllib.request.urlopen(*args, **kwargs)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 525, in open
-    response = meth(req, response)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 634, in http_response
-    response = self.parent.error(
-  File ""/usr/lib/python3.10/urllib/request.py"", line 563, in error
-    return self._call_chain(*args)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 496, in _call_chain
-    result = func(*args)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 503: Backend is unhealthy
-",HTTP Error 503: Backend is unhealthy
-cowidev.vax.batch.czechia,46.7,True,2023-09-05T07:01:16,,
-cowidev.vax.batch.denmark,,,2023-09-05T07:00:29,,
-cowidev.vax.batch.ecdc,290.47,True,2023-09-05T07:05:19,,
-cowidev.vax.batch.ecuador,,,2023-09-05T07:00:29,,
-cowidev.vax.batch.estonia,1.53,True,2023-09-05T07:00:30,,
-cowidev.vax.batch.france,38.08,True,2023-09-05T07:01:07,,
-cowidev.vax.batch.germany,1.02,True,2023-09-05T07:00:30,,
-cowidev.vax.batch.greece,76.82,True,2023-09-05T07:01:46,,
-cowidev.vax.batch.hong_kong,5.83,False,2023-09-05T07:05:31,"Traceback (most recent call last):
+cowidev.vax.batch.chile,1.18,True,2023-09-06T07:00:08,,
+cowidev.vax.batch.czechia,33.1,True,2023-09-06T07:00:40,,
+cowidev.vax.batch.denmark,,,2023-09-06T07:00:07,,
+cowidev.vax.batch.ecdc,103.71,True,2023-09-06T07:01:51,,
+cowidev.vax.batch.ecuador,,,2023-09-06T07:00:07,,
+cowidev.vax.batch.estonia,1.08,True,2023-09-06T07:00:08,,
+cowidev.vax.batch.france,6.63,True,2023-09-06T07:00:14,,
+cowidev.vax.batch.germany,0.23,True,2023-09-06T07:00:07,,
+cowidev.vax.batch.greece,23.1,True,2023-09-06T07:00:30,,
+cowidev.vax.batch.hong_kong,5.3,False,2023-09-06T07:02:18,"Traceback (most recent call last):
   File ""/home/owid/covid-19-data/scripts/src/cowidev/cmd/commons/get.py"", line 47, in run
     module.main()
   File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/batch/hong_kong.py"", line 288, in main
@@ -163,9 +69,9 @@ cowidev.vax.batch.hong_kong,5.83,False,2023-09-05T07:05:31,"Traceback (most rece
     raise Exception(
 Exception: 1 chunks of lengths 548 would be NaNed for metric total_vaccinations. That is more than maximum allowed (10) by make_monotonic() - check the data. Check dates ['2023-08-12']. Location(s) affected: {'Hong Kong'}
 ",1 chunks of lengths 548 would be NaNed for metric total_vaccinations. That is more than maximum allowed (10) by make_monotonic() - check the data. Check dates ['2023-08-12']. Location(s) affected: {'Hong Kong'}
-cowidev.vax.batch.indonesia,,,2023-09-05T07:00:29,,
-cowidev.vax.batch.ireland,20.38,True,2023-09-05T07:00:49,,
-cowidev.vax.batch.israel,0.16,False,2023-09-05T07:05:31,"Traceback (most recent call last):
+cowidev.vax.batch.indonesia,,,2023-09-06T07:00:07,,
+cowidev.vax.batch.ireland,4.55,True,2023-09-06T07:00:12,,
+cowidev.vax.batch.israel,0.11,False,2023-09-06T07:02:18,"Traceback (most recent call last):
   File ""/home/owid/covid-19-data/scripts/src/cowidev/cmd/commons/get.py"", line 47, in run
     module.main()
   File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/batch/israel.py"", line 189, in main
@@ -184,50 +90,8 @@ cowidev.vax.batch.israel,0.16,False,2023-09-05T07:05:31,"Traceback (most recent 
     raise JSONDecodeError(""Expecting value"", s, err.value) from None
 json.decoder.JSONDecodeError: Expecting value: line 3 column 2 (char 3)
 ",Expecting value: line 3 column 2 (char 3)
-cowidev.vax.batch.italy,0.03,False,2023-09-05T07:05:31,"Traceback (most recent call last):
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/cmd/commons/get.py"", line 47, in run
-    module.main()
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/batch/italy.py"", line 164, in main
-    Italy().export()
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/batch/italy.py"", line 146, in export
-    df_base = self.read().pipe(self.pipeline_base)
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/batch/italy.py"", line 42, in read
-    df = pd.read_csv(self.source_url)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/util/_decorators.py"", line 311, in wrapper
-    return func(*args, **kwargs)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/readers.py"", line 586, in read_csv
-    return _read(filepath_or_buffer, kwds)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/readers.py"", line 482, in _read
-    parser = TextFileReader(filepath_or_buffer, **kwds)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/readers.py"", line 811, in __init__
-    self._engine = self._make_engine(self.engine)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/readers.py"", line 1040, in _make_engine
-    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/c_parser_wrapper.py"", line 51, in __init__
-    self._open_handles(src, kwds)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/base_parser.py"", line 222, in _open_handles
-    self.handles = get_handle(
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/common.py"", line 609, in get_handle
-    ioargs = _get_filepath_or_buffer(
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/common.py"", line 312, in _get_filepath_or_buffer
-    with urlopen(req_info) as req:
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/common.py"", line 212, in urlopen
-    return urllib.request.urlopen(*args, **kwargs)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 525, in open
-    response = meth(req, response)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 634, in http_response
-    response = self.parent.error(
-  File ""/usr/lib/python3.10/urllib/request.py"", line 563, in error
-    return self._call_chain(*args)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 496, in _call_chain
-    result = func(*args)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 503: Backend is unhealthy
-",HTTP Error 503: Backend is unhealthy
-cowidev.vax.batch.japan,9.29,False,2023-09-05T07:05:40,"Traceback (most recent call last):
+cowidev.vax.batch.italy,23.11,True,2023-09-06T07:00:30,,
+cowidev.vax.batch.japan,9.26,False,2023-09-06T07:02:27,"Traceback (most recent call last):
   File ""/home/owid/covid-19-data/scripts/src/cowidev/cmd/commons/get.py"", line 47, in run
     module.main()
   File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/batch/japan.py"", line 375, in main
@@ -242,16 +106,16 @@ cowidev.vax.batch.japan,9.29,False,2023-09-05T07:05:40,"Traceback (most recent c
     df = self._read_xlsx(
   File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/batch/japan.py"", line 233, in _read_xlsx
     raise ValueError(f""Unknown sheets: {sheets_unknown}"")
-ValueError: Unknown sheets: {'５回目_総接種回数', '６回目_総接種回数', '5.8以降接種_総接種回数', '5.8以降接種_一般接種（５回目）', '5.8以降接種_一般接種（４回目）', '５回目_一般接種回数', '６回目_一般接種回数', '5.8以降接種_一般接種（６回目）', '5.8以降接種_一般接種（３回目）'}
-","Unknown sheets: {'５回目_総接種回数', '６回目_総接種回数', '5.8以降接種_総接種回数', '5.8以降接種_一般接種（５回目）', '5.8以降接種_一般接種（４回目）', '５回目_一般接種回数', '６回目_一般接種回数', '5.8以降接種_一般接種（６回目）', '5.8以降接種_一般接種（３回目）'}"
-cowidev.vax.batch.jersey,23.09,True,2023-09-05T07:00:52,,
-cowidev.vax.batch.latvia,222.56,True,2023-09-05T07:04:11,,
-cowidev.vax.batch.lithuania,47.5,True,2023-09-05T07:01:16,,
-cowidev.vax.batch.luxembourg,7.57,True,2023-09-05T07:00:36,,
-cowidev.vax.batch.malaysia,0.68,True,2023-09-05T07:05:41,,
-cowidev.vax.batch.malta,0.85,True,2023-09-05T07:05:42,,
-cowidev.vax.batch.netherlands,,,2023-09-05T07:00:29,,
-cowidev.vax.batch.new_zealand,3.79,False,2023-09-05T07:05:46,"Traceback (most recent call last):
+ValueError: Unknown sheets: {'5.8以降接種_一般接種（５回目）', '5.8以降接種_一般接種（６回目）', '６回目_総接種回数', '5.8以降接種_総接種回数', '5.8以降接種_一般接種（３回目）', '５回目_総接種回数', '5.8以降接種_一般接種（４回目）', '５回目_一般接種回数', '６回目_一般接種回数'}
+","Unknown sheets: {'5.8以降接種_一般接種（５回目）', '5.8以降接種_一般接種（６回目）', '６回目_総接種回数', '5.8以降接種_総接種回数', '5.8以降接種_一般接種（３回目）', '５回目_総接種回数', '5.8以降接種_一般接種（４回目）', '５回目_一般接種回数', '６回目_一般接種回数'}"
+cowidev.vax.batch.jersey,4.92,True,2023-09-06T07:00:12,,
+cowidev.vax.batch.latvia,65.65,True,2023-09-06T07:01:13,,
+cowidev.vax.batch.lithuania,4.95,True,2023-09-06T07:00:12,,
+cowidev.vax.batch.luxembourg,2.03,True,2023-09-06T07:00:09,,
+cowidev.vax.batch.malaysia,1.12,True,2023-09-06T07:00:08,,
+cowidev.vax.batch.malta,1.09,True,2023-09-06T07:00:08,,
+cowidev.vax.batch.netherlands,,,2023-09-06T07:00:07,,
+cowidev.vax.batch.new_zealand,2.04,False,2023-09-06T07:02:29,"Traceback (most recent call last):
   File ""/home/owid/covid-19-data/scripts/src/cowidev/cmd/commons/get.py"", line 47, in run
     module.main()
   File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/batch/new_zealand.py"", line 119, in main
@@ -270,229 +134,65 @@ cowidev.vax.batch.new_zealand,3.79,False,2023-09-05T07:05:46,"Traceback (most re
     raise ValueError(
 ValueError: Excel file format cannot be determined, you must specify an engine manually.
 ","Excel file format cannot be determined, you must specify an engine manually."
-cowidev.vax.batch.norway,0.02,False,2023-09-05T07:05:46,"Traceback (most recent call last):
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/cmd/commons/get.py"", line 47, in run
-    module.main()
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/batch/norway.py"", line 105, in main
-    Norway().export()
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/batch/norway.py"", line 100, in export
-    df = self.read().pipe(self.pipeline)
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/batch/norway.py"", line 14, in read
-    df = pd.read_csv(self.source_url)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/util/_decorators.py"", line 311, in wrapper
-    return func(*args, **kwargs)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/readers.py"", line 586, in read_csv
-    return _read(filepath_or_buffer, kwds)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/readers.py"", line 482, in _read
-    parser = TextFileReader(filepath_or_buffer, **kwds)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/readers.py"", line 811, in __init__
-    self._engine = self._make_engine(self.engine)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/readers.py"", line 1040, in _make_engine
-    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/c_parser_wrapper.py"", line 51, in __init__
-    self._open_handles(src, kwds)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/base_parser.py"", line 222, in _open_handles
-    self.handles = get_handle(
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/common.py"", line 609, in get_handle
-    ioargs = _get_filepath_or_buffer(
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/common.py"", line 312, in _get_filepath_or_buffer
-    with urlopen(req_info) as req:
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/common.py"", line 212, in urlopen
-    return urllib.request.urlopen(*args, **kwargs)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 525, in open
-    response = meth(req, response)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 634, in http_response
-    response = self.parent.error(
-  File ""/usr/lib/python3.10/urllib/request.py"", line 563, in error
-    return self._call_chain(*args)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 496, in _call_chain
-    result = func(*args)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 503: Backend is unhealthy
-",HTTP Error 503: Backend is unhealthy
-cowidev.vax.batch.peru,0.24,False,2023-09-05T07:05:46,"Traceback (most recent call last):
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/cmd/commons/get.py"", line 47, in run
-    module.main()
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/batch/peru.py"", line 182, in main
-    Peru().export()
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/batch/peru.py"", line 160, in export
-    df = self.read().pipe(self.pipeline)
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/batch/peru.py"", line 30, in read
-    df = pd.read_csv(self.source_url)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/util/_decorators.py"", line 311, in wrapper
-    return func(*args, **kwargs)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/readers.py"", line 586, in read_csv
-    return _read(filepath_or_buffer, kwds)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/readers.py"", line 482, in _read
-    parser = TextFileReader(filepath_or_buffer, **kwds)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/readers.py"", line 811, in __init__
-    self._engine = self._make_engine(self.engine)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/readers.py"", line 1040, in _make_engine
-    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/c_parser_wrapper.py"", line 51, in __init__
-    self._open_handles(src, kwds)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/base_parser.py"", line 222, in _open_handles
-    self.handles = get_handle(
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/common.py"", line 609, in get_handle
-    ioargs = _get_filepath_or_buffer(
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/common.py"", line 312, in _get_filepath_or_buffer
-    with urlopen(req_info) as req:
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/common.py"", line 212, in urlopen
-    return urllib.request.urlopen(*args, **kwargs)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 525, in open
-    response = meth(req, response)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 634, in http_response
-    response = self.parent.error(
-  File ""/usr/lib/python3.10/urllib/request.py"", line 557, in error
-    result = self._call_chain(*args)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 496, in _call_chain
-    result = func(*args)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 749, in http_error_302
-    return self.parent.open(new, timeout=req.timeout)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 525, in open
-    response = meth(req, response)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 634, in http_response
-    response = self.parent.error(
-  File ""/usr/lib/python3.10/urllib/request.py"", line 563, in error
-    return self._call_chain(*args)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 496, in _call_chain
-    result = func(*args)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 503: Backend is unhealthy
-",HTTP Error 503: Backend is unhealthy
-cowidev.vax.batch.portugal,,,2023-09-05T07:00:29,,
-cowidev.vax.batch.romania,165.73,True,2023-09-05T07:03:15,,
-cowidev.vax.batch.saudi_arabia,45.16,True,2023-09-05T07:01:14,,
-cowidev.vax.batch.singapore,21.94,True,2023-09-05T07:00:51,,
-cowidev.vax.batch.slovakia,0.18,False,2023-09-05T07:05:46,"Traceback (most recent call last):
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/cmd/commons/get.py"", line 47, in run
-    module.main()
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/batch/slovakia.py"", line 138, in main
-    Slovakia().export()
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/batch/slovakia.py"", line 133, in export
-    df = self.read().pipe(self.pipeline)
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/batch/slovakia.py"", line 30, in read
-    df = pd.read_csv(self.source_url, sep="";"")
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/util/_decorators.py"", line 311, in wrapper
-    return func(*args, **kwargs)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/readers.py"", line 586, in read_csv
-    return _read(filepath_or_buffer, kwds)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/readers.py"", line 482, in _read
-    parser = TextFileReader(filepath_or_buffer, **kwds)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/readers.py"", line 811, in __init__
-    self._engine = self._make_engine(self.engine)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/readers.py"", line 1040, in _make_engine
-    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/c_parser_wrapper.py"", line 51, in __init__
-    self._open_handles(src, kwds)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/base_parser.py"", line 222, in _open_handles
-    self.handles = get_handle(
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/common.py"", line 609, in get_handle
-    ioargs = _get_filepath_or_buffer(
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/common.py"", line 312, in _get_filepath_or_buffer
-    with urlopen(req_info) as req:
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/common.py"", line 212, in urlopen
-    return urllib.request.urlopen(*args, **kwargs)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 525, in open
-    response = meth(req, response)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 634, in http_response
-    response = self.parent.error(
-  File ""/usr/lib/python3.10/urllib/request.py"", line 557, in error
-    result = self._call_chain(*args)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 496, in _call_chain
-    result = func(*args)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 749, in http_error_302
-    return self.parent.open(new, timeout=req.timeout)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 525, in open
-    response = meth(req, response)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 634, in http_response
-    response = self.parent.error(
-  File ""/usr/lib/python3.10/urllib/request.py"", line 563, in error
-    return self._call_chain(*args)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 496, in _call_chain
-    result = func(*args)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 503: Backend is unhealthy
-",HTTP Error 503: Backend is unhealthy
-cowidev.vax.batch.slovenia,11.55,True,2023-09-05T07:00:40,,
-cowidev.vax.batch.south_korea,,,2023-09-05T07:00:29,,
-cowidev.vax.batch.spc,100.49,True,2023-09-05T07:02:09,,
-cowidev.vax.batch.sweden,72.45,True,2023-09-05T07:01:42,,
-cowidev.vax.batch.switzerland,243.39,True,2023-09-05T07:04:32,,
-cowidev.vax.batch.trinidad_and_tobago,22.95,True,2023-09-05T07:00:53,,
-cowidev.vax.batch.ukraine,,,2023-09-05T07:00:30,,
-cowidev.vax.batch.united_kingdom,4.82,True,2023-09-05T07:05:51,,
-cowidev.vax.batch.united_states,48.77,True,2023-09-05T07:01:19,,
-cowidev.vax.batch.uruguay,1.04,False,2023-09-05T07:05:52,"Traceback (most recent call last):
+cowidev.vax.batch.norway,0.67,True,2023-09-06T07:00:08,,
+cowidev.vax.batch.peru,4.94,True,2023-09-06T07:00:12,,
+cowidev.vax.batch.portugal,,,2023-09-06T07:00:07,,
+cowidev.vax.batch.romania,31.38,True,2023-09-06T07:00:38,,
+cowidev.vax.batch.saudi_arabia,8.32,True,2023-09-06T07:00:15,,
+cowidev.vax.batch.singapore,2.7,True,2023-09-06T07:00:10,,
+cowidev.vax.batch.slovakia,53.71,True,2023-09-06T07:01:01,,
+cowidev.vax.batch.slovenia,2.25,True,2023-09-06T07:00:09,,
+cowidev.vax.batch.south_korea,,,2023-09-06T07:00:07,,
+cowidev.vax.batch.spc,32.26,True,2023-09-06T07:00:39,,
+cowidev.vax.batch.sweden,23.52,True,2023-09-06T07:00:31,,
+cowidev.vax.batch.switzerland,73.82,True,2023-09-06T07:01:21,,
+cowidev.vax.batch.trinidad_and_tobago,4.29,True,2023-09-06T07:00:12,,
+cowidev.vax.batch.ukraine,,,2023-09-06T07:00:08,,
+cowidev.vax.batch.united_kingdom,25.25,True,2023-09-06T07:00:33,,
+cowidev.vax.batch.united_states,19.24,True,2023-09-06T07:00:27,,
+cowidev.vax.batch.uruguay,1.53,False,2023-09-06T07:02:30,"Traceback (most recent call last):
   File ""/home/owid/covid-19-data/scripts/src/cowidev/cmd/commons/get.py"", line 47, in run
     module.main()
   File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/batch/uruguay.py"", line 151, in main
     Uruguay().export()
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/batch/uruguay.py"", line 127, in export
-    df_base, df_age = self.read()
-  File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/batch/uruguay.py"", line 26, in read
-    df_age = pd.read_csv(self.source_url_age, usecols=lambda x: re.match(regex, x))
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/util/_decorators.py"", line 311, in wrapper
-    return func(*args, **kwargs)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/readers.py"", line 586, in read_csv
-    return _read(filepath_or_buffer, kwds)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/readers.py"", line 482, in _read
-    parser = TextFileReader(filepath_or_buffer, **kwds)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/readers.py"", line 811, in __init__
-    self._engine = self._make_engine(self.engine)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/readers.py"", line 1040, in _make_engine
-    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/c_parser_wrapper.py"", line 51, in __init__
-    self._open_handles(src, kwds)
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/parsers/base_parser.py"", line 222, in _open_handles
-    self.handles = get_handle(
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/common.py"", line 609, in get_handle
-    ioargs = _get_filepath_or_buffer(
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/common.py"", line 312, in _get_filepath_or_buffer
-    with urlopen(req_info) as req:
-  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/io/common.py"", line 212, in urlopen
-    return urllib.request.urlopen(*args, **kwargs)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 216, in urlopen
-    return opener.open(url, data, timeout)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 525, in open
-    response = meth(req, response)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 634, in http_response
-    response = self.parent.error(
-  File ""/usr/lib/python3.10/urllib/request.py"", line 563, in error
-    return self._call_chain(*args)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 496, in _call_chain
-    result = func(*args)
-  File ""/usr/lib/python3.10/urllib/request.py"", line 643, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 503: Backend is unhealthy
-",HTTP Error 503: Backend is unhealthy
-cowidev.vax.batch.zimbabwe,11.56,True,2023-09-05T07:00:42,,
-cowidev.vax.incremental.africacdc,,,2023-09-05T07:00:31,,
-cowidev.vax.incremental.antigua_barbuda,,,2023-09-05T07:00:31,,
-cowidev.vax.incremental.aruba,11.9,True,2023-09-05T07:00:42,,
-cowidev.vax.incremental.austria,,,2023-09-05T07:00:31,,
-cowidev.vax.incremental.azerbaijan,,,2023-09-05T07:00:31,,
-cowidev.vax.incremental.bahrain,,,2023-09-05T07:00:31,,
-cowidev.vax.incremental.bangladesh,76.13,True,2023-09-05T07:07:08,,
-cowidev.vax.incremental.barbados,,,2023-09-05T07:00:31,,
-cowidev.vax.incremental.brazil,0.33,True,2023-09-05T07:07:08,,
-cowidev.vax.incremental.bulgaria,60.48,True,2023-09-05T07:01:32,,
-cowidev.vax.incremental.china,49.06,True,2023-09-05T07:01:20,,
-cowidev.vax.incremental.costa_rica,,,2023-09-05T07:00:32,,
-cowidev.vax.incremental.croatia,10.95,True,2023-09-05T07:00:43,,
-cowidev.vax.incremental.cuba,48.79,True,2023-09-05T07:01:22,,
-cowidev.vax.incremental.curacao,,,2023-09-05T07:00:36,,
-cowidev.vax.incremental.cyprus,18.58,True,2023-09-05T07:00:55,,
-cowidev.vax.incremental.dominican_republic,16.37,False,2023-09-05T07:07:25,"Traceback (most recent call last):
+  File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/batch/uruguay.py"", line 129, in export
+    df = df_base.pipe(self.pipeline)
+  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/core/generic.py"", line 5430, in pipe
+    return com.pipe(self, func, *args, **kwargs)
+  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/core/common.py"", line 471, in pipe
+    return func(obj, *args, **kwargs)
+  File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/batch/uruguay.py"", line 51, in pipeline
+    df = df.pipe(self.make_monotonic)
+  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/core/generic.py"", line 5430, in pipe
+    return com.pipe(self, func, *args, **kwargs)
+  File ""/home/owid/covid-19-data/scripts/venv/lib/python3.10/site-packages/pandas/core/common.py"", line 471, in pipe
+    return func(obj, *args, **kwargs)
+  File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/utils/base.py"", line 120, in make_monotonic
+    return mkm(
+  File ""/home/owid/covid-19-data/scripts/src/cowidev/utils/utils.py"", line 23, in make_monotonic
+    return make_monotonic_new(df, column_date, column_metrics, max_removed_rows)
+  File ""/home/owid/covid-19-data/scripts/src/cowidev/utils/utils.py"", line 96, in make_monotonic_new
+    raise Exception(
+Exception: 1 chunks of lengths 672 would be NaNed for metric total_vaccinations. That is more than maximum allowed (10) by make_monotonic() - check the data. Check dates ['2023-01-01']. Location(s) affected: {'Uruguay'}
+",1 chunks of lengths 672 would be NaNed for metric total_vaccinations. That is more than maximum allowed (10) by make_monotonic() - check the data. Check dates ['2023-01-01']. Location(s) affected: {'Uruguay'}
+cowidev.vax.batch.zimbabwe,3.7,True,2023-09-06T07:00:12,,
+cowidev.vax.incremental.africacdc,,,2023-09-06T07:00:09,,
+cowidev.vax.incremental.antigua_barbuda,,,2023-09-06T07:00:09,,
+cowidev.vax.incremental.aruba,2.27,True,2023-09-06T07:00:11,,
+cowidev.vax.incremental.austria,,,2023-09-06T07:00:09,,
+cowidev.vax.incremental.azerbaijan,,,2023-09-06T07:00:09,,
+cowidev.vax.incremental.bahrain,,,2023-09-06T07:00:09,,
+cowidev.vax.incremental.bangladesh,51.48,True,2023-09-06T07:01:01,,
+cowidev.vax.incremental.barbados,,,2023-09-06T07:00:10,,
+cowidev.vax.incremental.brazil,1.25,True,2023-09-06T07:00:11,,
+cowidev.vax.incremental.bulgaria,20.95,True,2023-09-06T07:00:32,,
+cowidev.vax.incremental.china,23.63,True,2023-09-06T07:00:35,,
+cowidev.vax.incremental.costa_rica,,,2023-09-06T07:00:12,,
+cowidev.vax.incremental.croatia,0.99,True,2023-09-06T07:00:13,,
+cowidev.vax.incremental.cuba,11.63,True,2023-09-06T07:00:23,,
+cowidev.vax.incremental.curacao,,,2023-09-06T07:00:12,,
+cowidev.vax.incremental.cyprus,2.08,True,2023-09-06T07:00:14,,
+cowidev.vax.incremental.dominican_republic,13.18,False,2023-09-06T07:02:44,"Traceback (most recent call last):
   File ""/home/owid/covid-19-data/scripts/src/cowidev/cmd/commons/get.py"", line 47, in run
     module.main()
   File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/incremental/dominican_republic.py"", line 112, in main
@@ -509,36 +209,36 @@ cowidev.vax.incremental.dominican_republic,16.37,False,2023-09-05T07:07:25,"Trac
     raise ValueError(""More than one element found!"")
 ValueError: More than one element found!
 ",More than one element found!
-cowidev.vax.incremental.el_salvador,32.18,True,2023-09-05T07:01:13,,
-cowidev.vax.incremental.faeroe_islands,8.96,True,2023-09-05T07:00:51,,
-cowidev.vax.incremental.fiji,0.0,True,2023-09-05T07:00:42,,
-cowidev.vax.incremental.finland,3.95,True,2023-09-05T07:00:46,,
-cowidev.vax.incremental.gabon,,,2023-09-05T07:00:43,,
-cowidev.vax.incremental.georgia,28.29,True,2023-09-05T07:01:11,,
-cowidev.vax.incremental.greenland,,,2023-09-05T07:00:46,,
-cowidev.vax.incremental.guatemala,,,2023-09-05T07:00:46,,
-cowidev.vax.incremental.guernsey,,,2023-09-05T07:00:46,,
-cowidev.vax.incremental.hungary,209.05,True,2023-09-05T07:04:15,,
-cowidev.vax.incremental.iceland,12.79,True,2023-09-05T07:01:02,,
-cowidev.vax.incremental.india,6.61,True,2023-09-05T07:00:57,,
-cowidev.vax.incremental.iran,,,2023-09-05T07:00:51,,
-cowidev.vax.incremental.isle_of_man,14.32,True,2023-09-05T07:01:05,,
-cowidev.vax.incremental.jamaica,26.47,True,2023-09-05T07:01:18,,
-cowidev.vax.incremental.kazakhstan,22.73,True,2023-09-05T07:01:16,,
-cowidev.vax.incremental.kosovo,,,2023-09-05T07:00:55,,
-cowidev.vax.incremental.kyrgyzstan,20.26,True,2023-09-05T07:01:15,,
-cowidev.vax.incremental.laos,1.94,True,2023-09-05T07:07:27,,
-cowidev.vax.incremental.macao,,,2023-09-05T07:01:01,,
-cowidev.vax.incremental.moldova,,,2023-09-05T07:01:01,,
-cowidev.vax.incremental.monaco,239.25,True,2023-09-05T07:05:00,,
-cowidev.vax.incremental.mongolia,4.98,True,2023-09-05T07:01:07,,
-cowidev.vax.incremental.montenegro,5.36,True,2023-09-05T07:01:08,,
-cowidev.vax.incremental.morocco,,,2023-09-05T07:01:05,,
-cowidev.vax.incremental.myanmar,,,2023-09-05T07:01:05,,
-cowidev.vax.incremental.nepal,,,2023-09-05T07:01:05,,
-cowidev.vax.incremental.north_macedonia,,,2023-09-05T07:01:05,,
-cowidev.vax.incremental.northern_cyprus,21.53,True,2023-09-05T07:01:27,,
-cowidev.vax.incremental.paho,119.3,False,2023-09-05T07:09:26,"Traceback (most recent call last):
+cowidev.vax.incremental.el_salvador,8.85,True,2023-09-06T07:00:21,,
+cowidev.vax.incremental.faeroe_islands,1.28,True,2023-09-06T07:00:13,,
+cowidev.vax.incremental.fiji,0.0,True,2023-09-06T07:00:12,,
+cowidev.vax.incremental.finland,0.59,True,2023-09-06T07:00:13,,
+cowidev.vax.incremental.gabon,,,2023-09-06T07:00:13,,
+cowidev.vax.incremental.georgia,5.29,True,2023-09-06T07:00:18,,
+cowidev.vax.incremental.greenland,,,2023-09-06T07:00:13,,
+cowidev.vax.incremental.guatemala,,,2023-09-06T07:00:13,,
+cowidev.vax.incremental.guernsey,,,2023-09-06T07:00:13,,
+cowidev.vax.incremental.hungary,93.48,True,2023-09-06T07:01:46,,
+cowidev.vax.incremental.iceland,3.53,True,2023-09-06T07:00:17,,
+cowidev.vax.incremental.india,1.75,True,2023-09-06T07:00:15,,
+cowidev.vax.incremental.iran,,,2023-09-06T07:00:14,,
+cowidev.vax.incremental.isle_of_man,3.06,True,2023-09-06T07:00:17,,
+cowidev.vax.incremental.jamaica,9.59,True,2023-09-06T07:00:24,,
+cowidev.vax.incremental.kazakhstan,15.98,True,2023-09-06T07:00:31,,
+cowidev.vax.incremental.kosovo,,,2023-09-06T07:00:15,,
+cowidev.vax.incremental.kyrgyzstan,6.01,True,2023-09-06T07:00:21,,
+cowidev.vax.incremental.laos,10.86,True,2023-09-06T07:00:28,,
+cowidev.vax.incremental.macao,,,2023-09-06T07:00:17,,
+cowidev.vax.incremental.moldova,,,2023-09-06T07:00:17,,
+cowidev.vax.incremental.monaco,93.44,True,2023-09-06T07:01:50,,
+cowidev.vax.incremental.mongolia,2.43,True,2023-09-06T07:00:20,,
+cowidev.vax.incremental.montenegro,1.35,True,2023-09-06T07:00:22,,
+cowidev.vax.incremental.morocco,,,2023-09-06T07:00:21,,
+cowidev.vax.incremental.myanmar,,,2023-09-06T07:00:21,,
+cowidev.vax.incremental.nepal,,,2023-09-06T07:00:21,,
+cowidev.vax.incremental.north_macedonia,,,2023-09-06T07:00:21,,
+cowidev.vax.incremental.northern_cyprus,8.86,True,2023-09-06T07:00:30,,
+cowidev.vax.incremental.paho,86.04,False,2023-09-06T07:04:10,"Traceback (most recent call last):
   File ""/home/owid/covid-19-data/scripts/src/cowidev/cmd/commons/get.py"", line 47, in run
     module.main()
   File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/incremental/paho.py"", line 195, in main
@@ -557,23 +257,23 @@ cowidev.vax.incremental.paho,119.3,False,2023-09-05T07:09:26,"Traceback (most re
     return func(obj, *args, **kwargs)
   File ""/home/owid/covid-19-data/scripts/src/cowidev/vax/incremental/paho.py"", line 122, in pipe_check_columns
     raise ValueError(f""Missing column fields: {columns_missing}. Present columns are: {df.columns}"")
-ValueError: Missing column fields: {'Country code', 'Second dose', 'Single dose', '1st additional dose', 'Total doses', '2nd additional dose', 'Country/ Territory', 'First dose'}. Present columns are: Index(['date,location,total_vaccinations,people_vaccinated,people_fully_vaccinated,total_boosters,new_vaccinations,new_vaccinations_interpolated,new_people_vaccinated_interpolated,new_vaccinations_smoothed,new_people_vaccinated_smoothed', 'date'], dtype='object')
-","Missing column fields: {'Country code', 'Second dose', 'Single dose', '1st additional dose', 'Total doses', '2nd additional dose', 'Country/ Territory', 'First dose'}. Present columns are: Index(['date,location,total_vaccinations,people_vaccinated,people_fully_vaccinated,total_boosters,new_vaccinations,new_vaccinations_interpolated,new_people_vaccinated_interpolated,new_vaccinations_smoothed,new_people_vaccinated_smoothed', 'date'], dtype='object')"
-cowidev.vax.incremental.pakistan,,,2023-09-05T07:01:07,,
-cowidev.vax.incremental.philippines,,,2023-09-05T07:01:07,,
-cowidev.vax.incremental.poland,7.6,True,2023-09-05T07:01:15,,
-cowidev.vax.incremental.qatar,,,2023-09-05T07:01:08,,
-cowidev.vax.incremental.russia,168.16,True,2023-09-05T07:03:56,,
-cowidev.vax.incremental.saint_lucia,,,2023-09-05T07:01:11,,
-cowidev.vax.incremental.serbia,23.06,True,2023-09-05T07:01:34,,
-cowidev.vax.incremental.south_africa,,,2023-09-05T07:01:13,,
-cowidev.vax.incremental.spain,33.82,True,2023-09-05T07:01:46,,
-cowidev.vax.incremental.sri_lanka,,,2023-09-05T07:01:14,,
-cowidev.vax.incremental.suriname,26.26,True,2023-09-05T07:01:40,,
-cowidev.vax.incremental.taiwan,62.18,True,2023-09-05T07:02:17,,
-cowidev.vax.incremental.thailand,12.29,True,2023-09-05T07:01:28,,
-cowidev.vax.incremental.turkey,,,2023-09-05T07:01:16,,
-cowidev.vax.incremental.united_arab_emirates,,,2023-09-05T07:01:16,,
-cowidev.vax.incremental.vietnam,,,2023-09-05T07:01:16,,
-cowidev.vax.incremental.who,167.73,True,2023-09-05T07:04:03,,
-cowidev.vax.incremental.zambia,3.7,True,2023-09-05T07:01:19,,
+ValueError: Missing column fields: {'Country/ Territory', 'Total doses', 'Single dose', 'Second dose', 'Country code', 'First dose', '1st additional dose', '2nd additional dose'}. Present columns are: Index(['date,location,total_vaccinations,people_vaccinated,people_fully_vaccinated,total_boosters,new_vaccinations,new_vaccinations_interpolated,new_people_vaccinated_interpolated,new_vaccinations_smoothed,new_people_vaccinated_smoothed', 'date'], dtype='object')
+","Missing column fields: {'Country/ Territory', 'Total doses', 'Single dose', 'Second dose', 'Country code', 'First dose', '1st additional dose', '2nd additional dose'}. Present columns are: Index(['date,location,total_vaccinations,people_vaccinated,people_fully_vaccinated,total_boosters,new_vaccinations,new_vaccinations_interpolated,new_people_vaccinated_interpolated,new_vaccinations_smoothed,new_people_vaccinated_smoothed', 'date'], dtype='object')"
+cowidev.vax.incremental.pakistan,,,2023-09-06T07:00:22,,
+cowidev.vax.incremental.philippines,,,2023-09-06T07:00:22,,
+cowidev.vax.incremental.poland,4.42,True,2023-09-06T07:00:26,,
+cowidev.vax.incremental.qatar,,,2023-09-06T07:00:22,,
+cowidev.vax.incremental.russia,20.01,True,2023-09-06T07:00:42,,
+cowidev.vax.incremental.saint_lucia,,,2023-09-06T07:00:23,,
+cowidev.vax.incremental.serbia,11.13,True,2023-09-06T07:00:34,,
+cowidev.vax.incremental.south_africa,,,2023-09-06T07:00:24,,
+cowidev.vax.incremental.spain,19.95,True,2023-09-06T07:00:43,,
+cowidev.vax.incremental.sri_lanka,,,2023-09-06T07:00:25,,
+cowidev.vax.incremental.suriname,14.69,True,2023-09-06T07:00:40,,
+cowidev.vax.incremental.taiwan,22.93,True,2023-09-06T07:00:49,,
+cowidev.vax.incremental.thailand,6.44,True,2023-09-06T07:00:33,,
+cowidev.vax.incremental.turkey,,,2023-09-06T07:00:27,,
+cowidev.vax.incremental.united_arab_emirates,,,2023-09-06T07:00:27,,
+cowidev.vax.incremental.vietnam,,,2023-09-06T07:00:27,,
+cowidev.vax.incremental.who,29.25,True,2023-09-06T07:00:56,,
+cowidev.vax.incremental.zambia,2.62,True,2023-09-06T07:00:30,,
