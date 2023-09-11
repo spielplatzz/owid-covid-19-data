@@ -180,6 +180,7 @@ Ireland,Daily hospital occupancy,2023-08-06,285.0
 Ireland,Daily hospital occupancy,2023-08-13,408.0
 Ireland,Daily hospital occupancy,2023-08-20,404.0
 Ireland,Daily hospital occupancy,2023-08-27,376.0
+Ireland,Daily hospital occupancy,2023-09-03,315.0
 Ireland,Daily ICU occupancy,2021-01-10,88.0
 Ireland,Daily ICU occupancy,2021-01-17,169.0
 Ireland,Daily ICU occupancy,2021-01-24,207.0
@@ -318,6 +319,7 @@ Ireland,Daily ICU occupancy,2023-08-06,5.0
 Ireland,Daily ICU occupancy,2023-08-13,8.0
 Ireland,Daily ICU occupancy,2023-08-20,6.0
 Ireland,Daily ICU occupancy,2023-08-27,8.0
+Ireland,Daily ICU occupancy,2023-09-03,10.0
 Ireland,Weekly new hospital admissions,2020-03-15,114.16145520833581
 Ireland,Weekly new ICU admissions,2020-03-15,8.934374755434975
 Ireland,Weekly new hospital admissions,2020-03-22,285.8999921739192
@@ -654,31 +656,33 @@ Ireland,Weekly new hospital admissions,2023-05-21,250.16249315217934
 Ireland,Weekly new ICU admissions,2023-05-21,3.9708332246377664
 Ireland,Weekly new hospital admissions,2023-05-28,235.2718685597877
 Ireland,Weekly new ICU admissions,2023-05-28,1.9854166123188808
-Ireland,Weekly new hospital admissions,2023-06-04,174.71666188406175
+Ireland,Weekly new hospital admissions,2023-06-04,175.7093701902212
 Ireland,Weekly new ICU admissions,2023-06-04,4.963541530797209
-Ireland,Weekly new hospital admissions,2023-06-11,141.9572877808002
+Ireland,Weekly new hospital admissions,2023-06-11,142.9499960869596
 Ireland,Weekly new ICU admissions,2023-06-11,1.9854166123188808
-Ireland,Weekly new hospital admissions,2023-06-18,123.09582996377077
+Ireland,Weekly new hospital admissions,2023-06-18,122.10312165761131
 Ireland,Weekly new ICU admissions,2023-06-18,1.9854166123188808
 Ireland,Weekly new hospital admissions,2023-06-25,131.03749641304628
 Ireland,Weekly new ICU admissions,2023-06-25,0.9927083061594377
 Ireland,Weekly new hospital admissions,2023-07-02,78.42395618659589
 Ireland,Weekly new ICU admissions,2023-07-02,0.9927083061594377
-Ireland,Weekly new hospital admissions,2023-07-09,97.2854140036253
+Ireland,Weekly new hospital admissions,2023-07-09,99.27083061594418
 Ireland,Weekly new ICU admissions,2023-07-09,0.9927083061594377
-Ireland,Weekly new hospital admissions,2023-07-16,143.94270439311904
+Ireland,Weekly new hospital admissions,2023-07-16,148.90624592391626
 Ireland,Weekly new ICU admissions,2023-07-16,2.978124918478324
-Ireland,Weekly new hospital admissions,2023-07-23,154.86249576087292
+Ireland,Weekly new hospital admissions,2023-07-23,160.81874559782958
 Ireland,Weekly new ICU admissions,2023-07-23,1.9854166123188808
-Ireland,Weekly new hospital admissions,2023-08-06,387.1562394021823
+Ireland,Weekly new hospital admissions,2023-08-06,370.2801981974718
 Ireland,Weekly new ICU admissions,2023-08-06,2.978124918478324
-Ireland,Weekly new hospital admissions,2023-08-13,423.8864467300817
+Ireland,Weekly new hospital admissions,2023-08-13,428.84998826087883
 Ireland,Weekly new ICU admissions,2023-08-13,6.948958143116091
-Ireland,Weekly new hospital admissions,2023-08-20,384.178114483704
+Ireland,Weekly new hospital admissions,2023-08-20,420.9083218116033
 Ireland,Weekly new ICU admissions,2023-08-20,6.948958143116091
-Ireland,Weekly new hospital admissions,2023-08-27,246.19165992754154
+Ireland,Weekly new hospital admissions,2023-08-27,357.374990217399
 Ireland,Weekly new ICU admissions,2023-08-27,3.9708332246377664
-Ireland,Weekly new hospital admissions,2023-07-30,245.1989516213821
+Ireland,Weekly new hospital admissions,2023-09-03,268.0312426630493
+Ireland,Weekly new ICU admissions,2023-09-03,9.927083061594418
+Ireland,Weekly new hospital admissions,2023-07-30,261.0822845199332
 Ireland,Weekly new ICU admissions,2023-07-30,3.9708332246377664
 Ireland,Weekly new hospital admissions,2020-03-01,11.912499673913299
 Ireland,Weekly new ICU admissions,2020-03-01,1.9854166123188808
