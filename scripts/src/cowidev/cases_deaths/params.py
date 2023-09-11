@@ -90,6 +90,12 @@ LARGE_DATA_CORRECTIONS = [
 ]
 
 
+# add here country-dates where data should be set to NaN since the date specified
+LARGE_DATA_CORRECTIONS_SINCE = [
+    ("United States", "2023-05-21", "deaths"),
+    ("United States", "2023-05-21", "cases"),
+]
+
 ########################################################################################
 # Doubling days
 ########################################################################################

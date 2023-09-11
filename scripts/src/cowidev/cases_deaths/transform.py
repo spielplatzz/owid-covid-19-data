@@ -4,6 +4,7 @@ import numpy as np
 from cowidev.megafile.steps.test import get_testing
 from cowidev.cases_deaths.params import (
     LARGE_DATA_CORRECTIONS,
+    LARGE_DATA_CORRECTIONS_SINCE,
     AGGREGATE_REGIONS_SPEC,
     DOUBLING_DAYS_SPEC,
     ROLLING_AVG_SPEC,
@@ -47,7 +48,7 @@ def process_data(df):
 
 
 # ================================================
-# Discard rows
+# Format rate
 # ================================================
 
 
@@ -70,6 +71,9 @@ def discard_rows(df):
     # Custom data corrections
     for ldc in LARGE_DATA_CORRECTIONS:
         df.loc[(df.location == ldc[0]) & (df.date.astype(str) == ldc[1]), f"new_{ldc[2]}"] = np.nan
+
+    for ldc in LARGE_DATA_CORRECTIONS_SINCE:
+        df.loc[(df.location == ldc[0]) & (df.date.astype(str) >= ldc[1]), f"new_{ldc[2]}"] = np.nan
 
     # If the last known value is above 1000 cases or 100 deaths but the latest reported value is 0
     # then set that value to NA in case it's a temporary reporting error. (Up to 7 days in the past)
