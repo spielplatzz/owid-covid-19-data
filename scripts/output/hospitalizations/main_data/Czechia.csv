@@ -3863,10 +3863,11 @@ date,indicator,value,entity
 2023-09-15,Daily hospital occupancy,109.0,Czechia
 2023-09-16,Daily hospital occupancy,108.0,Czechia
 2023-09-17,Daily hospital occupancy,121.0,Czechia
-2023-09-18,Daily hospital occupancy,146.0,Czechia
-2023-09-19,Daily hospital occupancy,144.0,Czechia
-2023-09-20,Daily hospital occupancy,151.0,Czechia
-2023-09-21,Daily hospital occupancy,143.0,Czechia
+2023-09-18,Daily hospital occupancy,148.0,Czechia
+2023-09-19,Daily hospital occupancy,148.0,Czechia
+2023-09-20,Daily hospital occupancy,147.0,Czechia
+2023-09-21,Daily hospital occupancy,140.0,Czechia
+2023-09-22,Daily hospital occupancy,130.0,Czechia
 2020-03-01,Daily ICU occupancy,0.0,Czechia
 2020-03-02,Daily ICU occupancy,0.0,Czechia
 2020-03-03,Daily ICU occupancy,0.0,Czechia
@@ -5167,3 +5168,4 @@ date,indicator,value,entity
 2023-09-19,Daily ICU occupancy,8.0,Czechia
 2023-09-20,Daily ICU occupancy,12.0,Czechia
 2023-09-21,Daily ICU occupancy,11.0,Czechia
+2023-09-22,Daily ICU occupancy,12.0,Czechia
