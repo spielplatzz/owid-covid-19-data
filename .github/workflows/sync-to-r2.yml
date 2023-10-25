@@ -14,10 +14,14 @@ jobs:
         with:
           persist-credentials: false
 
+      - name: Install rclone
+        run: sudo apt-get install rclone
+
       - name: Upload to R2
-        run: aws s3 sync ./public/ s3://covid-19 --acl public-read
+        run: rclone sync ./public/ :s3://covid-19 --s3-acl=public-read --checksum --progress
         env:
-          AWS_ENDPOINT_URL: https://078fcdfed9955087315dd86792e71a7e.r2.cloudflarestorage.com
-          AWS_DEFAULT_REGION: auto # this is necessary for some reason!
-          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          RCLONE_S3_PROVIDER: Cloudflare
+          RCLONE_S3_ENDPOINT: https://078fcdfed9955087315dd86792e71a7e.r2.cloudflarestorage.com
+          RCLONE_S3_REGION: auto
+          RCLONE_S3_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          RCLONE_S3_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
