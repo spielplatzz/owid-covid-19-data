@@ -1294,6 +1294,13 @@ date,indicator,value,entity
 2023-10-15,Daily hospital occupancy,3881,Canada
 2023-10-16,Daily hospital occupancy,3827,Canada
 2023-10-17,Daily hospital occupancy,3786,Canada
+2023-10-18,Daily hospital occupancy,3830,Canada
+2023-10-19,Daily hospital occupancy,3869,Canada
+2023-10-20,Daily hospital occupancy,3855,Canada
+2023-10-21,Daily hospital occupancy,3852,Canada
+2023-10-22,Daily hospital occupancy,3948,Canada
+2023-10-23,Daily hospital occupancy,3924,Canada
+2023-10-24,Daily hospital occupancy,3901,Canada
 2020-04-01,Daily ICU occupancy,203,Canada
 2020-04-02,Daily ICU occupancy,222,Canada
 2020-04-03,Daily ICU occupancy,225,Canada
@@ -2589,3 +2596,10 @@ date,indicator,value,entity
 2023-10-15,Daily ICU occupancy,152,Canada
 2023-10-16,Daily ICU occupancy,153,Canada
 2023-10-17,Daily ICU occupancy,155,Canada
+2023-10-18,Daily ICU occupancy,152,Canada
+2023-10-19,Daily ICU occupancy,152,Canada
+2023-10-20,Daily ICU occupancy,148,Canada
+2023-10-21,Daily ICU occupancy,149,Canada
+2023-10-22,Daily ICU occupancy,152,Canada
+2023-10-23,Daily ICU occupancy,147,Canada
+2023-10-24,Daily ICU occupancy,141,Canada
