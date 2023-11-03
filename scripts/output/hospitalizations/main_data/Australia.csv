@@ -1297,6 +1297,13 @@ date,indicator,value,entity
 2023-10-17,Daily hospital occupancy,1022,Australia
 2023-10-18,Daily hospital occupancy,1022,Australia
 2023-10-19,Daily hospital occupancy,1081,Australia
+2023-10-20,Daily hospital occupancy,1081,Australia
+2023-10-21,Daily hospital occupancy,1081,Australia
+2023-10-22,Daily hospital occupancy,1081,Australia
+2023-10-23,Daily hospital occupancy,1081,Australia
+2023-10-24,Daily hospital occupancy,1081,Australia
+2023-10-25,Daily hospital occupancy,1081,Australia
+2023-10-26,Daily hospital occupancy,1275,Australia
 2020-03-31,Daily ICU occupancy,82,Australia
 2020-04-01,Daily ICU occupancy,86,Australia
 2020-04-02,Daily ICU occupancy,92,Australia
@@ -2595,3 +2602,10 @@ date,indicator,value,entity
 2023-10-17,Daily ICU occupancy,25,Australia
 2023-10-18,Daily ICU occupancy,25,Australia
 2023-10-19,Daily ICU occupancy,26,Australia
+2023-10-20,Daily ICU occupancy,26,Australia
+2023-10-21,Daily ICU occupancy,26,Australia
+2023-10-22,Daily ICU occupancy,26,Australia
+2023-10-23,Daily ICU occupancy,26,Australia
+2023-10-24,Daily ICU occupancy,26,Australia
+2023-10-25,Daily ICU occupancy,26,Australia
+2023-10-26,Daily ICU occupancy,32,Australia
